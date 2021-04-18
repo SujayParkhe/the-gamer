@@ -10,19 +10,19 @@ class Directory extends React.Component {
             sections: [
                 {
                     title: 'pc games',
-                    imageUrl: 'https://cdn1.dotesports.com/wp-content/uploads/2019/03/22081728/52a03db4019d1fb82e52cbc46fe7d646.jpg',
+                    imageUrl: 'https://i.gadgets360cdn.com/large/GTA_5_1591910141267.jpg?downsize=950:*&output-quality=80',
                     id: 1,
-                    linkUrl: 'shop/pc-games'
+                    linkUrl: 'pc-games'
                   },
                   {
                     title: 'ps games',
-                    imageUrl: 'https://i.ytimg.com/vi/eOiUtRF8k28/maxresdefault.jpg',
+                    imageUrl: 'https://wallpapercave.com/wp/wp2392870.jpg',
                     id: 2,
                     linkUrl: 'shop/ps-games'
                   },
                   {
                     title: 'xbox games',
-                    imageUrl: 'https://i.ytimg.com/vi/D4skU2yrrl8/maxresdefault.jpg',
+                    imageUrl: 'https://wallpapercave.com/wp/wp14646.jpg',
                     id: 3,
                     linkUrl: 'shop/xbox-games'
                   },
@@ -51,8 +51,8 @@ class Directory extends React.Component {
         return (
             <div className="directory-menu">
                 {
-                    this.state.sections.map(({ title, imageUrl, id, size }) => (
-                        <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                    this.state.sections.map(({ id, ...otherSectionProps }) => (
+                        <MenuItem key={id} {...otherSectionProps} />
                     ))
                 }
             </div>

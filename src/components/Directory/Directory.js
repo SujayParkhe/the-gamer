@@ -12,7 +12,7 @@ class Directory extends React.Component {
                     title: 'pc games',
                     imageUrl: 'https://i.gadgets360cdn.com/large/GTA_5_1591910141267.jpg?downsize=950:*&output-quality=80',
                     id: 1,
-                    linkUrl: 'pc-games'
+                    linkUrl: 'shop/pc-games'
                   },
                   {
                     title: 'ps games',
